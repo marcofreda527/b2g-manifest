@@ -35,7 +35,7 @@
   <project path="development" name="platform/development"/>
   <project path="device/common" name="device/common"/>
   <project path="device/sample" name="device/sample"/>
-  <project path="external/apriori" name="b2g/platform_external_apriori" remote="mozillaorg" revision="v1-train"/>
+  <project path="external/apriori" name="platform_external_apriori" remote="b2g" revision="master"/>
   <project path="external/bluetooth/bluez" name="platform/external/bluetooth/bluez"/>
   <project path="external/bluetooth/glib" name="platform/external/bluetooth/glib"/>
   <project path="external/bluetooth/hcidump" name="platform/external/bluetooth/hcidump"/>
@@ -44,8 +44,8 @@
   <project path="external/dbus" name="platform/external/dbus"/>
   <project path="external/dhcpcd" name="platform/external/dhcpcd"/>
   <project path="external/dnsmasq" name="platform/external/dnsmasq"/>
-  <project path="external/elfcopy" name="b2g/platform_external_elfcopy" remote="mozillaorg" revision="v1-train"/>
-  <project path="external/elfutils" name="b2g/platform_external_elfutils" remote="mozillaorg" revision="v1-train"/>
+  <project path="external/elfcopy" name="platform_external_elfcopy" remote="b2g" revision="master"/>
+  <project path="external/elfutils" name="platform_external_elfutils" remote="b2g" revision="master"/>
   <project path="external/e2fsprogs" name="platform/external/e2fsprogs"/>
   <project path="external/expat" name="platform/external/expat"/>
   <project path="external/fdlibm" name="platform/external/fdlibm"/>
@@ -68,7 +68,7 @@
   <project path="external/openssl" name="platform/external/openssl"/>
   <project path="external/protobuf" name="platform/external/protobuf"/>
   <project path="external/safe-iop" name="platform/external/safe-iop"/>
-  <project path="external/screencap-gonk" name="b2g/screencap-gonk" remote="mozillaorg" revision="v1-train"/>
+  <project path="external/screencap-gonk" name="screencap-gonk" remote="b2g" revision="master"/>
   <project path="external/skia" name="platform/external/skia"/>
   <project path="external/sonivox" name="platform/external/sonivox"/>
   <project path="external/speex" name="platform/external/speex"/>
@@ -78,7 +78,7 @@
   <project path="external/tagsoup" name="platform/external/tagsoup"/>
   <project path="external/tinyalsa" name="platform/external/tinyalsa"/>
   <project path="external/tremolo" name="platform/external/tremolo"/>
-  <project path="external/unbootimg" name="b2g/unbootimg" remote="mozillaorg" revision="v1-train"/>
+  <project path="external/unbootimg" name="unbootimg" remote="b2g" revision="master"/>
   <project path="external/webp" name="platform/external/webp"/>
   <project path="external/webrtc" name="platform/external/webrtc"/>
   <project path="external/wpa_supplicant" name="platform/external/wpa_supplicant"/>
