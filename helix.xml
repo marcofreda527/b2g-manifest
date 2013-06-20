@@ -1,26 +1,31 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <manifest>
 
-  <remote name="aosp" fetch="https://android.googlesource.com/"/>
-  <remote name="b2g" fetch="git://github.com/mozilla-b2g/" />
-  <remote name="mozilla" fetch="git://github.com/mozilla/"/>
-  <remote name="caf" fetch="git://codeaurora.org/"/>
-  <remote name="mozillaorg" fetch="https://git.mozilla.org"/>
-  <remote name="keven" fetch="https://github.com/ymkuo1108/"/>
-  <remote name="marco" fetch="https://github.com/marcofreda527/"/>
-  <default revision="b2g/ics_strawberry" remote="caf" sync-j="4"/>
+  <remote name="aosp"
+          fetch="https://android.googlesource.com/" />
+  <remote name="b2g"
+          fetch="git://github.com/mozilla-b2g/" />
+  <remote name="mozilla"
+          fetch="git://github.com/mozilla/" />
+  <remote name="caf"
+          fetch="git://codeaurora.org/" />
+  <remote name="mozillaorg"
+          fetch="https://git.mozilla.org/releases" />
+  <default revision="b2g/ics_strawberry"
+           remote="caf"
+           sync-j="4" />
 
   <!-- Gonk specific things and forks -->
-  <project path="build" name="b2g/platform_build" remote="mozillaorg" revision="v1-train">
+  <project path="build" name="platform_build" remote="b2g" revision="master">
     <copyfile src="core/root.mk" dest="Makefile"/>
   </project>
-  <project path="dalvik" name="b2g/fake-dalvik" remote="mozillaorg" revision="v1-train"/>
-  <project path="gaia" name="gaia" remote="b2g" revision="v1.1.0hd" />
-  <project path="gecko" name="mozilla-central" remote="mozilla" revision="b2g18_v1_1_0_hd"/>
-  <project path="gonk-misc" name="b2g/gonk-misc" remote="mozillaorg" revision="v1-train"/>
-  <project path="rilproxy" name="b2g/rilproxy" remote="mozillaorg" revision="v1-train"/>
-  <project path="librecovery" name="librecovery" remote="keven" revision="master"/>
-  <project path="external/moztt" name="b2g/moztt" remote="mozillaorg" revision="v1-train"/>
+  <project path="dalvik" name="fake-dalvik" remote="b2g" revision="master"/>
+  <project path="gaia" name="gaia.git" remote="mozillaorg" revision="v1.1.0hd" />
+  <project path="gecko" name="gecko.git" remote="mozillaorg" revision="v1.1.0hd"/>
+  <project path="gonk-misc" name="b2g/gonk-misc" remote="b2g" revision="master"/>
+  <project path="rilproxy" name="b2g/rilproxy" remote="b2g" revision="master"/>
+  <project path="librecovery" name="librecovery" remote="b2g" revision="master"/>
+  <project path="external/moztt" name="b2g/moztt" remote="b2g" revision="master"/>
   <project path="patches" name="b2g/gonk-patches" remote="mozillaorg" revision="master"/>
 
   <!-- Stock Android things -->
@@ -98,7 +103,7 @@
   <!-- helix specific things -->
   <project path="device/qcom/common" name="device/qcom/common"/>
   <project path="device/qcom/msm7627a" name="platform/vendor/qcom/msm7627a"/>
-  <project path="device/qcom/helix" name="device-helix" remote="marco" revision="master" /> 
+  <project path="device/qcom/helix" name="device-helix" remote="b2g" revision="master" /> 
   <project path="kernel" name="kernel/msm"/>
   <project path="hardware/qcom/camera" name="platform/hardware/qcom/camera"/>
   <project path="hardware/qcom/display" name="platform/hardware/qcom/display"/>
