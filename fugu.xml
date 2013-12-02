@@ -9,6 +9,7 @@
   <remote name="mozillaorg" fetch="https://git.mozilla.org/releases" />
   <remote name="sprd-b2g" fetch="http://sprdsource.spreadtrum.com:8085/b2g" />
   <remote name="sprd-aosp" fetch="http://sprdsource.spreadtrum.com:8085/b2g/android" />
+  <remote name="sprd-github" fetch="https://github.com/sprd-ffos/" />
   <default revision="refs/tags/android-4.0.4_r2.1" remote="aosp" sync-j="4" />
 
   <!-- B2G specific things. -->
@@ -107,5 +108,6 @@
   <project path="gaia/local_mk" name="gaia/local_mk"  remote="sprd-b2g" revision="sprdroid4.0.3_vlx_3.0_b2g" />
   <project path="gaia/sprd_resource" name="gaia/sprd_resource" remote="sprd-b2g" revision="sprdroid4.0.3_vlx_3.0_b2g"/>
   <project path="orangutan" name="orangutan" remote="sprd-b2g" revision="sprdroid4.0.3_vlx_3.0_b2g" />
+  <project path="device/sprd" name="device-sprd" remote="sprd-github" revision="master" />
   <project path="device/sprd/fugu" name="device-fugu" remote="marco" revision="master" />
 </manifest>
